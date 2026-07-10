@@ -1,70 +1,147 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Invitación Leo | Viaje Intergaláctico</title>
-  <meta name="description" content="Leo te invita a su viaje intergaláctico para celebrar sus 3 años." />
-  <link rel="preconnect" href="https://www.youtube.com">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="stars" aria-hidden="true"></div>
+<main>
 
-  <section class="hero section">
-    <img src="assets/leo-espacio-1.jpeg" alt="Leo con planetas de acuarela" class="cover-img" />
-    <div class="glass intro-card">
-      <p class="eyebrow">¡Tripulación lista!</p>
-      <h1>Leo te invita a su viaje intergaláctico</h1>
-      <p class="subtitle">Ven a explorar, jugar y celebrar sus 3 años.</p>
-      <a href="#invitacion" class="button">🚀 Abrir invitación</a>
-    </div>
-  </section>
+<section class="hero" id="inicio">
 
-  <section id="invitacion" class="section image-section reveal">
-    <img src="assets/invitacion-principal.jpeg" alt="Invitación principal del cumpleaños de Leo" class="poster" />
-  </section>
+<img class="hero-image" src="leo-espacio-1.jpeg" alt="Leo">
 
-  <section class="section countdown-section reveal">
-    <div class="glass countdown-card">
-      <p class="eyebrow">Conteo para despegar</p>
-      <h2>Faltan</h2>
-      <div class="countdown" aria-live="polite">
-        <div><strong id="days">30</strong><span>días</span></div>
-        <div><strong id="hours">00</strong><span>horas</span></div>
-        <div><strong id="minutes">00</strong><span>min</span></div>
-        <div><strong id="seconds">00</strong><span>seg</span></div>
-      </div>
-      <p class="date-note">Fiesta: 8 de agosto de 2026</p>
-    </div>
-  </section>
+<div class="hero-content">
 
-  <section class="section image-section reveal">
-    <img src="assets/dress-code.jpeg" alt="Dress code de viaje intergaláctico" class="poster" />
-  </section>
+<p class="eyebrow">
+🚀 ¡Tripulación lista!
+</p>
 
-  <section class="section music-section reveal">
-    <div class="glass music-card">
-      <p class="eyebrow">Música de la misión</p>
-      <h2>Activa la música 🎵</h2>
-      <p>Por políticas de navegador, la música necesita que alguien toque play.</p>
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/6AwnqLGFTTA?si=hvHJVueQpApB28KD" title="Música invitación Leo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
+<h1>
+Leo te invita a su
+Viaje Intergaláctico
+</h1>
 
-  <section class="section location-section reveal">
-    <div class="glass location-card">
-      <p class="eyebrow">Coordenadas de aterrizaje</p>
-      <h2>Ubicación</h2>
-      <p>Salón de fiestas “Caracolito”, Estrellade Belén 9, Granjas Navidad, Cuajimalpa.</p>
-      <a class="button" target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/M5LcxMq4QSjsnbpUA?g_st=ic">📍 Abrir mapa</a>
-      <a class="button ghost" target="_blank" rel="noreferrer" href="https://wa.me/525576728210?text=%F0%9F%9A%80%20%C2%A1Hola%21%20Confirmo%20mi%20asistencia%20al%20Viaje%20Intergal%C3%A1ctico%20de%20Leo.%20Seremos%20___%20astronautas.%20%F0%9F%91%A8%E2%80%8D%F0%9F%9A%80%E2%9C%A8">💚 Confirmar por WhatsApp</a>
-      <p class="small">Mensaje sugerido: confirma cuántos astronautas asistirán.</p>
-    </div>
-  </section>
+<p class="subtitle">
+Ven a explorar, jugar y celebrar sus 3 años.
+</p>
 
-  <script src="script.js"></script>
-</body>
-</html>
+<button id="startBtn" class="primary-btn">
+🚀 Iniciar misión
+</button>
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<h2>Dress Code</h2>
+
+<img
+src="dress-code.jpeg"
+alt="Dress Code"
+class="full-image">
+
+</section>
+
+
+
+<section id="invitacion" class="section">
+
+<img
+src="invitacion-principal.jpeg"
+alt="Invitación"
+class="full-image">
+
+<div class="countdown">
+
+<h2>⏳ Conteo para despegar</h2>
+
+<div class="timer">
+
+<div>
+<span id="days">00</span>
+<small>Días</small>
+</div>
+
+<div>
+<span id="hours">00</span>
+<small>Horas</small>
+</div>
+
+<div>
+<span id="minutes">00</span>
+<small>Minutos</small>
+</div>
+
+<div>
+<span id="seconds">00</span>
+<small>Segundos</small>
+</div>
+
+</div>
+
+<p>
+📅 8 de agosto de 2026
+</p>
+
+</div>
+
+
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+target="_blank"
+href="https://wa.me/525576728210?text=%F0%9F%9A%80%20Hola!%20Confirmo%20mi%20asistencia%20al%20Viaje%20Intergal%C3%A1ctico%20de%20Leo.%20Seremos%20___%20astronautas.">
+
+💚 Confirmar asistencia
+
+</a>
+
+<a
+class="btn maps"
+target="_blank"
+href="https://maps.app.goo.gl/M5LcxMq4QSjsnbpUA?g_st=ic">
+
+📍 Ver ubicación
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="music">
+
+<h2>🎵 Música de la misión</h2>
+
+<p>
+Toca el botón para comenzar la aventura.
+</p>
+
+<audio
+id="bgMusic"
+loop>
+
+<source
+src="musica.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</section>
+
+
+
+<section class="footer">
+
+🚀
+<p>
+
+Nos vemos en la plataforma de lanzamiento.
+
+</p>
+
+</section>
+
+</main>
